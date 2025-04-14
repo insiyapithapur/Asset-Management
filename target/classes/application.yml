@@ -1,0 +1,26 @@
+web:
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+    allowed-headers: "*"
+    exposed-headers: "*"
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-bold-haze-a56zquro.us-east-2.aws.neon.tech/asset_mgt?user=kirtanprajapati0804&password=OagB4eZfCrs1&sslmode=require
+    username: postgres
+    password: 1!kirtan
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hbm2ddl:
+        auto: update
+jwt:
+  secret-key: |
+    afafasfafafasfasfasfafacasdasfasxASFACASDFACASDFASFASFDAFASFASDAADSCSDFADCVSGCFVADXCcadwavfsfarvf
